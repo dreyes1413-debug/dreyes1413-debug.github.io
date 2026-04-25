@@ -11,7 +11,6 @@
 
         <ul class="nav-links" id="nav-list">
             <li><a href="{{ '/' | relative_url }}">Home</a></li>
-            <li><a href="{{ '/services' | relative_url }}">Services</a></li>
             <li><a href="{{ '/portfolio' | relative_url }}">Portfolio</a></li>
             <li><a href="{{ '/about' | relative_url }}">About</a></li>
             <li><a href="{{ '/' | relative_url }}#contact" class="btn-nav">Hire Us</a></li>
@@ -29,3 +28,36 @@
         navList.classList.toggle('active');
     });
 </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | DR Website Design</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">DR <span>Website Design</span></div>
+            <ul class="nav-links">
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/services' | relative_url }}">Services</a></li>
+                <li><a href="{{ '/portfolio' | relative_url }}">Portfolio</a></li>
+                <li><a href="{{ '/about' | relative_url }}">About</a></li>
+                <li><a href="{{ '/' | relative_url }}#contact" class="btn-nav">Hire Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>&copy; {{ "now" | date: "%Y" }} DR Website Design | {{ site.email }}</p>
+    </footer>
+</body>
+</html>
+

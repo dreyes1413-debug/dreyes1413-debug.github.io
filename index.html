@@ -1,69 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DR Website Design | Modern Web Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://googleapis.com" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav class="container">
-            <div class="logo">DR <span>Website Design</span></div>
-            <ul class="nav-links">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact" class="btn-nav">Hire Us</a></li>
-            </ul>
-        </nav>
-    </header>
+---
+layout: default
+title: Home
+---
+<section class="hero">
+    <div class="container">
+        <h1>We Build Websites That <span>Perform</span></h1>
+        <p>Custom digital experiences for businesses that want to grow.</p>
+        <a href="#contact" class="cta-button">Get a Free Quote</a>
+    </div>
+</section>
 
-    <section class="hero">
-        <div class="container">
-            <h1>We Build Websites That <span>Perform</span></h1>
-            <p>Custom, high-speed digital experiences for businesses that want to grow.</p>
-            <a href="#contact" class="cta-button">Get a Free Quote</a>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">What We Do</h2>
-            <div class="service-grid">
-                <div class="card">
-                    <h3>Custom Development</h3>
-                    <p>Clean code tailored to your specific business needs.</p>
-                </div>
-                <div class="card">
-                    <h3>UI/UX Design</h3>
-                    <p>Intuitive designs focused on user retention and sales.</p>
-                </div>
-                <div class="card">
-                    <h3>SEO Optimization</h3>
-                    <p>We make sure your site is found by the right customers.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact DR Website Design</h2>
-            <p>Ready to start? Send us a message.</p>
-            
-            <!-- Functional Contact Form -->
-            <form action="https://formspree.io" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="_replyto" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Tell us about your project" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 DR Website Design | drwebdesign@gmail.com</p>
-    </footer>
-</body>
-</html>
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io{{ site.email }}" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Project Details" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </div>
+</section>

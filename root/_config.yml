@@ -1,0 +1,9 @@
+title: DR Website Design
+email: drwebdesign@gmail.com
+description: High-performance web solutions.
+baseurl: "" 
+url: "https://github.io"
+
+# Build settings
+sass:
+  style: compressed

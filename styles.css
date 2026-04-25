@@ -23,3 +23,45 @@ form { max-width: 500px; margin: 20px auto; display: flex; flex-direction: colum
 input, textarea { padding: 12px; border: 1px solid #ddd; border-radius: 5px; }
 
 footer { padding: 40px 0; text-align: center; background: #222; color: #fff; }
+
+// Mobile Hamburger Button Styles
+.menu-toggle {
+    display: none; // Hidden on desktop
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+}
+
+// Media Query for Mobile (below 768px)
+@media (max-width: 768px) {
+    .menu-toggle { display: flex; } // Show button on mobile
+
+    .nav-links {
+        display: none; // Hide links initially
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px; // Adjust based on header height
+        left: 0;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    // This class is added by JavaScript when clicked
+    .nav-links.active {
+        display: flex; 
+    }
+
+    .nav-links li { margin: 15px 0; }
+}
+

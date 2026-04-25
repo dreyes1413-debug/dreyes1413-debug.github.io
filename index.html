@@ -3,57 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Agency Name | Professional Web Solutions</title>
+    <title>DR Website Design | Modern Web Solutions</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Optional: Add Google Fonts for a modern look -->
     <link href="https://googleapis.com" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Agency<span>Name</span></div>
+            <div class="logo">DR <span>Website Design</span></div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact" class="btn">Get Started</a></li>
+                <li><a href="#contact" class="btn-nav">Hire Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="container">
-            <h1>We Build Websites That <span>Grow Your Business</span></h1>
-            <p>High-performance, custom-coded websites designed for conversion.</p>
-            <a href="#contact" class="cta-button">Book a Consultation</a>
+            <h1>We Build Websites That <span>Perform</span></h1>
+            <p>Custom, high-speed digital experiences for businesses that want to grow.</p>
+            <a href="#contact" class="cta-button">Get a Free Quote</a>
         </div>
     </section>
 
     <section id="services" class="services">
         <div class="container">
-            <h2>Our Services</h2>
+            <h2 class="section-title">What We Do</h2>
             <div class="service-grid">
                 <div class="card">
+                    <h3>Custom Development</h3>
+                    <p>Clean code tailored to your specific business needs.</p>
+                </div>
+                <div class="card">
                     <h3>UI/UX Design</h3>
-                    <p>Beautiful interfaces designed for human interaction.</p>
+                    <p>Intuitive designs focused on user retention and sales.</p>
                 </div>
                 <div class="card">
-                    <h3>Web Development</h3>
-                    <p>Fast, responsive, and SEO-optimized code.</p>
-                </div>
-                <div class="card">
-                    <h3>E-commerce</h3>
-                    <p>Scalable online stores built to sell.</p>
+                    <h3>SEO Optimization</h3>
+                    <p>We make sure your site is found by the right customers.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <h2>Let's Work Together</h2>
-            <p>Email us at: contact@youragency.com</p>
+            <h2>Contact DR Website Design</h2>
+            <p>Ready to start? Send us a message.</p>
+            
+            <!-- Functional Contact Form -->
+            <form action="https://formspree.io" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Tell us about your project" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
         </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DR Website Design | drwebdesign@gmail.com</p>
     </footer>
 </body>
 </html>
